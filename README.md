@@ -9,6 +9,6 @@
 4. 庫存管理:綜合查詢庫存明細記錄。 庫存狀態自動警告提示。 如庫存過剩、少貨、缺貨等。 軟體為您預警，避免庫存商品積壓損失和缺貨。
 5. 人員管理:員工、會員、供貨商、廠商等基本資料登記管理。 員工操作權限管理。 客戶銷售權限管理。
 ### 三.功能模組圖
-員工E-R圖:
-
-![image](https://github.com/dogg21/SE_Final/blob/main/image/staff.png)
+![image](https://github.com/dogg21/SE_Final/blob/main/image/functions.png)
+### 四.業務流程圖
+![image](https://github.com/dogg21/SE_Final/blob/main/image/flow.png)
