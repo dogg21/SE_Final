@@ -22,4 +22,23 @@
 5. 商品類型實體屬性：商品類型編號，類型名稱，商品注意事項
 6. 供應商實體屬性：供應商編號，姓名，電話，位址
 ### 二.局部E-R圖
+員工:
+
+![image](https://github.com/dogg21/SE_Final/blob/main/image/staff.png)
+
+商品:
+
+![image](https://github.com/dogg21/SE_Final/blob/main/image/goods.png)
+
+會員:
+
+![image](https://github.com/dogg21/SE_Final/blob/main/image/menber.png)
+
+供貨商:
+
+![image](https://github.com/dogg21/SE_Final/blob/main/image/vendor.png)
+
+倉庫:
+
+![image](https://github.com/dogg21/SE_Final/blob/main/image/store.png)
 
