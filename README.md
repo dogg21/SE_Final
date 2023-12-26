@@ -10,4 +10,5 @@
 5. 人員管理:員工、會員、供貨商、廠商等基本資料登記管理。 員工操作權限管理。 客戶銷售權限管理。
 ### 三.功能模組圖
 員工E-R圖:
+
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/staff.png)
