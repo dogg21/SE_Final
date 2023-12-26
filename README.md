@@ -42,3 +42,6 @@
 
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/store.png)
 
+### 三.全域E-R圖
+![image](https://github.com/dogg21/SE_Final/blob/main/image/all.png)
+
