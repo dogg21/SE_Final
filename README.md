@@ -59,6 +59,7 @@
 | Spart  | 員工所屬部門 | varchar |  |
 | Ssalary  | 員工工資 | money | Ssalary >= 0 |
 
+
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Gnum | 商品編號 | varchar | 主鍵 |
