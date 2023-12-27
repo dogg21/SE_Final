@@ -140,3 +140,18 @@
 | Xdate | 出貨日期 | datetime |  |
 | Snum | 出貨員編號 | varchar | 是表Staff的外鍵 |
 
+## 四.代碼實現
+### 1.實現Python 連接 SQL Severe 資料庫
+'''
+import pymssql  #引入pymssql模块
+
+def conn():
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")  
+    if connect:
+        print("連接成功!")
+    return connect
+
+if __name__ == '__main__':
+    conn = conn()
+'''
+
