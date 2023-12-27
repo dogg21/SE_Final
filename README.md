@@ -1,6 +1,9 @@
 # 超市零售信息管理系统
 * [1.需求分析](https://github.com/dogg21/SE_Final#1%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90)
     * [一.設計概念](https://github.com/dogg21/SE_Final#%E4%B8%80%E8%A8%AD%E8%A8%88%E6%A6%82%E5%BF%B5)
+    * [二.功能說明](https://github.com/dogg21/SE_Final#%E4%BA%8C%E5%8A%9F%E8%83%BD%E8%AA%AA%E6%98%8E)
+    * [三.功能模組圖](https://github.com/dogg21/SE_Final#%E4%B8%89%E5%8A%9F%E8%83%BD%E6%A8%A1%E7%B5%84%E5%9C%96)
+    * [四.業務流程圖](https://github.com/dogg21/SE_Final#%E5%9B%9B%E6%A5%AD%E5%8B%99%E6%B5%81%E7%A8%8B%E5%9C%96)
 ## 1.需求分析
 ### 一.設計概念
 這個超市零售管理資訊系統旨在為超市的會員管理工作提供一個比較系統的零售管理平台，它幫助超市存儲及管理進貨、銷售、庫存以及人員信息，是一套管理工具、極大提高超市管理的 效率。 很大程度上幫助了超市管理者對超市的掌握與管理。
