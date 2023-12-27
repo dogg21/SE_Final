@@ -143,10 +143,10 @@
 ## 四.代碼實現
 ### 1.實現Python 連接 SQL Severe 資料庫
 ```
-import pymssql  #引入pymssql模块
+import pymssql  #引入pymssql模組
 
 def conn():
-    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")  
+    connect = pymssql.connect(host = "localhost",database = "Manager",charset="utf8")  
     if connect:
         print("連接成功!")
     return connect
@@ -154,4 +154,460 @@ def conn():
 if __name__ == '__main__':
     conn = conn()
 ```
+### 2.創建資料庫表
+資料庫中表的創建可以直接在SQLServer中手動建表，也可以通過Python程式進行建表，其語法規則和SQL一樣，代碼如下：
+```
+import pymssql
 
+connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")  # 建立连接
+if connect:
+    print("连接成功!")
+
+cursor = connect.cursor()   # 创建一个游标对象,python里的sql语句都要通过cursor来执行
+cursor.execute("create table Staff(Snum  varchar(10) primary key,Sname varchar(20) not null,Ssex varchar(5) check(Ssex in('男','女')),Sage int not null check(Sage>=18),Sstand int not null check(Sstand>=0),Sphone varchar(20) not null,Sid varchar(25) not null,Spart varchar(10) not null,Ssalary money check(Ssalary>=0))")
+cursor.execute("create table Vendor(Vnum varchar(10) primary key,Vname varchar(10) not null,Vphone varchar(20) not null,Vpalce varchar(10) not null)")
+cursor.execute("create table Goods(Gnum varchar(10) primary key,Gname varchar(10) not null,Gtype varchar(10) not null,Gprice money check(Gprice>=0),Gbid money check(Gbid>=0),Gstock int check(Gstock>=0),Galarm int check(Galarm>=0), Gplan int check(Gplan>=0),Vnum varchar(10) not null,foreign key(Vnum) references Vendor(Vnum))")
+cursor.execute("create table Menber(Mnum varchar(10) primary key,Mname varchar(10) not null,Mphone varchar(20) not null,Mdate datetime,Mtotal money check(Mtotal>=0),Mbalance money check(Mbalance>=0),Mcip varchar(25) not null)")
+cursor.execute("create table Ware(Wnum varchar(10) primary key,Wname varchar(10) not null,Wplace varchar(10) not null)")
+cursor.execute("create table Trade(Tnum varchar(10) primary key,Tdate datetime  not null,Snum varchar(10) not null,Gnum varchar(10) not null,Tamount int check(Tamount>=0),Tmoney money check(Tmoney>=0),Mnum varchar(10) not null,foreign key(Snum) references Staff(Snum),foreign key(Gnum) references Goods(Gnum),foreign key(Mnum) references Menber(Mnum))")
+cursor.execute("create table Infor(Tnum varchar(10) not null,Gnum varchar(10) not null,Iamount int check(Iamount>=0),Imoney money check(Imoney>=0),Idate datetime not null,foreign key(Tnum) references Trade(Tnum),foreign key(Gnum) references Goods(Gnum))")
+cursor.execute("create table Entry(Enum varchar(10) primary key,Gnum varchar(10) not null,Eamount int check(Eamount>=0),Emoney money check(Emoney>=0),Vnum varchar(10) not null,Edate datetime not null,Snum varchar(10) not null,foreign key(Snum) references Staff(Snum),foreign key(Gnum) references Goods(Gnum),foreign key(Vnum) references Vendor(Vnum))")
+cursor.execute("create table Exits(Xnum varchar(10) primary key,Gnum varchar(10) not null,Xamount int check(Xamount>=0),Xmoney money check(Xmoney>=0),Xdate datetime not null,Snum varchar(10) not null,foreign key(Snum) references Staff(Snum),foreign key(Gnum) references Goods(Gnum))")
+connect.commit()  #提交
+cursor.close()  # 关闭游标
+connect.close()  # 关闭连接
+```
+### 3.插入數據
+在Goods表中批量插入資料:
+```
+import pymssql
+
+connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+if connect:
+    print("连接成功!")
+
+cursor = connect.cursor()  # 创建一个游标对象,python里的sql语句都要通过cursor来执行
+sql = "insert into Goods(Gnum,Gname,Gtype,Gprice,Gbid,Gstock,Galarm,Gplan,Vnum) values ('200001','薯片','零食',8,5,500,100,600,'100002')"
+sql = "insert into Goods(Gnum,Gname,Gtype,Gprice,Gbid,Gstock,Galarm,Gplan,Vnum) values ('200002','可乐','饮料',4,2,1000,200,1500,'100001')"
+sql = "insert into Goods(Gnum,Gname,Gtype,Gprice,Gbid,Gstock,Galarm,Gplan,Vnum) values ('200003','猪肉','肉类',32,20,400,50,500,'100003')"
+cursor.execute(sql)
+connect.commit()  # 提交
+cursor.close()
+connect.close()
+```
+在Vendor表中批量插入資料：
+```
+import pymssql
+import tkinter as tk
+import tkinter.messagebox
+
+#数据库添加操作
+def add():
+    # 连接数据库
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+    # 创建光标
+    cursor = connect.cursor()
+    # 编写SQL语句
+    sql = "insert into Goods(Gnum,Gname,Gtype,Gprice,Gbid,Gstock,Galarm,Gplan,Vnum) values('%s','%s','%s','%s','%s','%s','%s','%s',%s)" % (v1.get(), v2.get(), v3.get(), v4.get(), v5.get(), v6.get(), v7.get(), v8.get(), v9.get())
+    # 执行SQL语句，并且输出完成提示信息，否则回滚
+    try:
+        cursor.execute(sql)
+        connect.commit()
+        tkinter.messagebox.showinfo("提示", "数据添加成功")
+    except:
+        connect.rollback()
+    # 关闭数据库连接，防止泄露
+    connect.close()
+
+#数据库删除操作
+def delete():
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+    cursor=connect.cursor()
+    sql = "delete from Goods where Gnum='%s'" % (v10.get())
+    try:
+        cursor.execute(sql)
+        connect.commit()
+        tkinter.messagebox.showinfo("提示","数据删除成功")
+    except:
+        connect.rollback()
+    connect.close()
+
+#数据库更新操作
+def update():
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+    cursor = connect.cursor()
+    sql="update Goods set Gstock='%s' where Gnum='%s'"%(v11.get(),v12.get())
+    try:
+        cursor.execute(sql)
+        connect.commit()
+        tkinter.messagebox.showinfo("提示","数据更新成功！")
+    except:
+        connect.rollback()
+    connect.close()
+
+#数据库模糊条件查询
+def select():
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+    cursor = connect.cursor()
+    sql = "select Vname from Vendor,Goods where Goods.Vnum=Vendor.Vnum and Goods.Gnum like'%s'"%('%'+v13.get()+'%')
+    try:
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        for row in results:
+            Vname = row[0]
+            tkinter.messagebox.showinfo("提示","Vname=%s" % (Vname))
+    except:
+        return
+
+#添加商品界面
+def Staff_add():
+    #构建全集变量，方便上面的函数调用
+    global window_function
+    global v1,v2,v3,v4,v5,v6,v7,v8,v9
+    #生成窗口
+    window_function=tk.Tk()
+    #窗口标题
+    window_function.title("超市零售信息管理系统")
+    #窗口大小
+    window_function.geometry('400x700')
+    #生成标签
+    tk.Label(window_function, text="添加新商品", font=("黑体", 20)).grid(row=0,column=1,pady=10)
+    tk.Label(window_function, text="请输入商品编号：").grid(row=1, column=0, padx=20, pady=20)
+    tk.Label(window_function,text="请输入商品名称：").grid(row = 2,column =0,padx=20,pady=20)
+    tk.Label(window_function,text="请输入商品类别：").grid(row = 3,column =0,padx=20,pady=20)
+    tk.Label(window_function,text="请输入商品售价：").grid(row = 4,column =0,padx=20,pady=20)
+    tk.Label(window_function, text="请输入商品成本：").grid(row=5, column=0, padx=20, pady=20)
+    tk.Label(window_function, text="请输入库存量：").grid(row=6, column=0, padx=20, pady=20)
+    tk.Label(window_function, text="请输入告警量：").grid(row=7, column=0, padx=20, pady=20)
+    tk.Label(window_function, text="请输入计划库存量：").grid(row=8, column=0, padx=20, pady=20)
+    tk.Label(window_function, text="请输入供货商编号：").grid(row=9, column=0, padx=20, pady=20)
+    #定义变量记录输入信息
+    v1 = tk.StringVar()
+    v2 = tk.StringVar()
+    v3 = tk.StringVar()
+    v4 = tk.StringVar()
+    v5 = tk.StringVar()
+    v6 = tk.StringVar()
+    v7 = tk.StringVar()
+    v8 = tk.StringVar()
+    v9 = tk.StringVar()
+    #生成输入框
+    entry1 = tk.Entry(window_function,show=None,textvariable=v1).grid(row = 1,column =1)
+    entry2 = tk.Entry(window_function,show=None,textvariable=v2).grid(row = 2,column =1)
+    entry3 = tk.Entry(window_function,show=None,textvariable=v3).grid(row = 3,column =1)
+    entry4 = tk.Entry(window_function, show=None, textvariable=v4).grid(row=4, column=1)
+    entry5 = tk.Entry(window_function, show=None, textvariable=v5).grid(row=5, column=1)
+    entry6 = tk.Entry(window_function, show=None, textvariable=v6).grid(row=6, column=1)
+    entry7 = tk.Entry(window_function, show=None, textvariable=v7).grid(row=7, column=1)
+    entry8 = tk.Entry(window_function, show=None, textvariable=v8).grid(row=8, column=1)
+    entry9 = tk.Entry(window_function, show=None, textvariable=v9).grid(row=9, column=1)
+    #生成按钮
+    button = tk.Button(window_function, text="添加", command=add).place(relx=0.3,rely=0.9)
+
+    button2 = tk.Button(window_function, text="返回", command=chaneg_main).place(relx=0.5,rely=0.9)
+    #显示窗口
+    window_function.mainloop()
+
+#删除商品界面
+def Staff_delete():
+    global window_function
+    global v10
+    window_function=tk.Tk()
+    window_function.title("超市零售信息管理系统")
+    window_function.geometry('500x400')
+    tk.Label(window_function, text="删除商品", font=("黑体", 20)).grid(row=0,column=1,pady=20)
+    tk.Label(window_function,text="请输入商品编号：").grid(row = 1,column =0,padx=20)
+    v10 =tk.StringVar()
+    entry1=tk.Entry(window_function,show=None,textvariable=v10).grid(row = 1,column =1,pady=40)
+    button = tk.Button(window_function, text="删除", command=delete,anchor = 's').place(relx=0.2,rely=0.5)
+    button2 = tk.Button(window_function, text="返回", command=chaneg_main).place(relx=0.4,rely=0.5)
+    window_function.mainloop()
+
+#更新商品信息界面
+def Staff_update():
+    global window_function
+    global v11,v12
+    window_function=tk.Tk()
+    window_function.title("超市零售信息管理系统")
+    window_function.geometry('500x400')
+    tk.Label(window_function, text="更新商品信息", font=("黑体", 20)).grid(row=0,column=1,pady=20)
+    tk.Label(window_function,text="请输入商品库存：").grid(row = 1,column =0,padx=20,pady=20)
+    tk.Label(window_function,text="请输入商品编号：").grid(row = 2,column =0,padx=20,pady=20)
+    v11=tk.StringVar()
+    v12=tk.StringVar()
+    entry1=tk.Entry(window_function,show=None,textvariable=v11).grid(row = 1,column =1)
+    entry2=tk.Entry(window_function,show=None,textvariable=v12).grid(row = 2,column =1)
+    button = tk.Button(window_function, text="更新", command=update).place(relx=0.3,rely=0.5)
+    button2 = tk.Button(window_function, text="返回", command=chaneg_main).place(relx=0.5,rely=0.5)
+    window_function.mainloop()
+
+#条件查找商品界面
+def Staff_select():
+    global window_function
+    global v13
+    window_function=tk.Tk()
+    window_function.title("超市零售信息管理系统")
+    window_function.geometry('500x400')
+    tk.Label(window_function, text="查找商品的供货商名称", font=("黑体", 20)).grid(row=0,column=1,pady=20)
+    tk.Label(window_function,text="请输入商品编号：").grid(row = 1,column =0,padx=20)
+    v13 =tk.StringVar()
+    entry1=tk.Entry(window_function,show=None,textvariable=v13).grid(row = 1,column =1,pady=40)
+    button = tk.Button(window_function, text="查找", command=select).place(relx=0.3,rely=0.5)
+    button2 = tk.Button(window_function, text="返回", command=chaneg_main).place(relx=0.5,rely=0.5)
+    window_function.mainloop()
+
+#添加商品界面跳转
+def change_add():
+    #销毁画布
+    window.destroy()
+    #生成新界面
+    Staff_add()
+
+#删除商品界面跳转
+def change_delete():
+    window.destroy()
+    Staff_delete()
+
+#更新商品界面跳转
+def change_update():
+    window.destroy()
+    Staff_update()
+
+#条件查询商品界面跳转
+def change_select():
+    window.destroy()
+    Staff_select()
+
+#主界面跳转
+def chaneg_main():
+    window_function.destroy()
+    mainpage()
+
+#主界面
+def mainpage():
+    global window
+    window = tk.Tk()
+    window.title("超市零售信息管理系统")
+    window.geometry('500x400')
+    #生成画布，销毁后生成新的画布实现跳转
+    page = tk.Frame(window)
+    page.pack()
+    tk.Label(window, text="欢迎使用超市零售信息管理系统", font=("黑体", 20)).pack(pady=10)
+    button1 = tk.Button(window, text="添加商品信息", command=change_add).pack(pady=10)
+    button2 = tk.Button(window, text="删除商品信息", command=change_delete).pack(pady=10)
+    button3 = tk.Button(window, text="修改商品信息", command=change_update).pack(pady=10)
+    button4 = tk.Button(window, text="查找商品供货商名称", command=change_select).pack(pady=10)
+    window.mainloop()
+
+#主函数生成主界面
+if __name__ == '__main__':
+    mainpage()
+```
+### 4.創建介面按鈕，並實現資料庫的“增刪改查”
+```
+import pymssql
+import tkinter as tk
+import tkinter.messagebox
+
+#数据库添加操作
+def add():
+    # 连接数据库
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+    # 创建光标
+    cursor = connect.cursor()
+    # 编写SQL语句
+    sql = "insert into Goods(Gnum,Gname,Gtype,Gprice,Gbid,Gstock,Galarm,Gplan,Vnum) values('%s','%s','%s','%s','%s','%s','%s','%s',%s)" % (v1.get(), v2.get(), v3.get(), v4.get(), v5.get(), v6.get(), v7.get(), v8.get(), v9.get())
+    # 执行SQL语句，并且输出完成提示信息，否则回滚
+    try:
+        cursor.execute(sql)
+        connect.commit()
+        tkinter.messagebox.showinfo("提示", "数据添加成功")
+    except:
+        connect.rollback()
+    # 关闭数据库连接，防止泄露
+    connect.close()
+
+#数据库删除操作
+def delete():
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+    cursor=connect.cursor()
+    sql = "delete from Goods where Gnum='%s'" % (v10.get())
+    try:
+        cursor.execute(sql)
+        connect.commit()
+        tkinter.messagebox.showinfo("提示","数据删除成功")
+    except:
+        connect.rollback()
+    connect.close()
+
+#数据库更新操作
+def update():
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+    cursor = connect.cursor()
+    sql="update Goods set Gstock='%s' where Gnum='%s'"%(v11.get(),v12.get())
+    try:
+        cursor.execute(sql)
+        connect.commit()
+        tkinter.messagebox.showinfo("提示","数据更新成功！")
+    except:
+        connect.rollback()
+    connect.close()
+
+#数据库模糊条件查询
+def select():
+    connect = pymssql.connect(host = "127.0.0.1:1433",database = "Manager",charset="utf8")
+    cursor = connect.cursor()
+    sql = "select Vname from Vendor,Goods where Goods.Vnum=Vendor.Vnum and Goods.Gnum like'%s'"%('%'+v13.get()+'%')
+    try:
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        for row in results:
+            Vname = row[0]
+            tkinter.messagebox.showinfo("提示","Vname=%s" % (Vname))
+    except:
+        return
+
+#添加商品界面
+def Staff_add():
+    #构建全集变量，方便上面的函数调用
+    global window_function
+    global v1,v2,v3,v4,v5,v6,v7,v8,v9
+    #生成窗口
+    window_function=tk.Tk()
+    #窗口标题
+    window_function.title("超市零售信息管理系统")
+    #窗口大小
+    window_function.geometry('400x700')
+    #生成标签
+    tk.Label(window_function, text="添加新商品", font=("黑体", 20)).grid(row=0,column=1,pady=10)
+    tk.Label(window_function, text="请输入商品编号：").grid(row=1, column=0, padx=20, pady=20)
+    tk.Label(window_function,text="请输入商品名称：").grid(row = 2,column =0,padx=20,pady=20)
+    tk.Label(window_function,text="请输入商品类别：").grid(row = 3,column =0,padx=20,pady=20)
+    tk.Label(window_function,text="请输入商品售价：").grid(row = 4,column =0,padx=20,pady=20)
+    tk.Label(window_function, text="请输入商品成本：").grid(row=5, column=0, padx=20, pady=20)
+    tk.Label(window_function, text="请输入库存量：").grid(row=6, column=0, padx=20, pady=20)
+    tk.Label(window_function, text="请输入告警量：").grid(row=7, column=0, padx=20, pady=20)
+    tk.Label(window_function, text="请输入计划库存量：").grid(row=8, column=0, padx=20, pady=20)
+    tk.Label(window_function, text="请输入供货商编号：").grid(row=9, column=0, padx=20, pady=20)
+    #定义变量记录输入信息
+    v1 = tk.StringVar()
+    v2 = tk.StringVar()
+    v3 = tk.StringVar()
+    v4 = tk.StringVar()
+    v5 = tk.StringVar()
+    v6 = tk.StringVar()
+    v7 = tk.StringVar()
+    v8 = tk.StringVar()
+    v9 = tk.StringVar()
+    #生成输入框
+    entry1 = tk.Entry(window_function,show=None,textvariable=v1).grid(row = 1,column =1)
+    entry2 = tk.Entry(window_function,show=None,textvariable=v2).grid(row = 2,column =1)
+    entry3 = tk.Entry(window_function,show=None,textvariable=v3).grid(row = 3,column =1)
+    entry4 = tk.Entry(window_function, show=None, textvariable=v4).grid(row=4, column=1)
+    entry5 = tk.Entry(window_function, show=None, textvariable=v5).grid(row=5, column=1)
+    entry6 = tk.Entry(window_function, show=None, textvariable=v6).grid(row=6, column=1)
+    entry7 = tk.Entry(window_function, show=None, textvariable=v7).grid(row=7, column=1)
+    entry8 = tk.Entry(window_function, show=None, textvariable=v8).grid(row=8, column=1)
+    entry9 = tk.Entry(window_function, show=None, textvariable=v9).grid(row=9, column=1)
+    #生成按钮
+    button = tk.Button(window_function, text="添加", command=add).place(relx=0.3,rely=0.9)
+
+    button2 = tk.Button(window_function, text="返回", command=chaneg_main).place(relx=0.5,rely=0.9)
+    #显示窗口
+    window_function.mainloop()
+
+#删除商品界面
+def Staff_delete():
+    global window_function
+    global v10
+    window_function=tk.Tk()
+    window_function.title("超市零售信息管理系统")
+    window_function.geometry('500x400')
+    tk.Label(window_function, text="删除商品", font=("黑体", 20)).grid(row=0,column=1,pady=20)
+    tk.Label(window_function,text="请输入商品编号：").grid(row = 1,column =0,padx=20)
+    v10 =tk.StringVar()
+    entry1=tk.Entry(window_function,show=None,textvariable=v10).grid(row = 1,column =1,pady=40)
+    button = tk.Button(window_function, text="删除", command=delete,anchor = 's').place(relx=0.2,rely=0.5)
+    button2 = tk.Button(window_function, text="返回", command=chaneg_main).place(relx=0.4,rely=0.5)
+    window_function.mainloop()
+
+#更新商品信息界面
+def Staff_update():
+    global window_function
+    global v11,v12
+    window_function=tk.Tk()
+    window_function.title("超市零售信息管理系统")
+    window_function.geometry('500x400')
+    tk.Label(window_function, text="更新商品信息", font=("黑体", 20)).grid(row=0,column=1,pady=20)
+    tk.Label(window_function,text="请输入商品库存：").grid(row = 1,column =0,padx=20,pady=20)
+    tk.Label(window_function,text="请输入商品编号：").grid(row = 2,column =0,padx=20,pady=20)
+    v11=tk.StringVar()
+    v12=tk.StringVar()
+    entry1=tk.Entry(window_function,show=None,textvariable=v11).grid(row = 1,column =1)
+    entry2=tk.Entry(window_function,show=None,textvariable=v12).grid(row = 2,column =1)
+    button = tk.Button(window_function, text="更新", command=update).place(relx=0.3,rely=0.5)
+    button2 = tk.Button(window_function, text="返回", command=chaneg_main).place(relx=0.5,rely=0.5)
+    window_function.mainloop()
+
+#条件查找商品界面
+def Staff_select():
+    global window_function
+    global v13
+    window_function=tk.Tk()
+    window_function.title("超市零售信息管理系统")
+    window_function.geometry('500x400')
+    tk.Label(window_function, text="查找商品的供货商名称", font=("黑体", 20)).grid(row=0,column=1,pady=20)
+    tk.Label(window_function,text="请输入商品编号：").grid(row = 1,column =0,padx=20)
+    v13 =tk.StringVar()
+    entry1=tk.Entry(window_function,show=None,textvariable=v13).grid(row = 1,column =1,pady=40)
+    button = tk.Button(window_function, text="查找", command=select).place(relx=0.3,rely=0.5)
+    button2 = tk.Button(window_function, text="返回", command=chaneg_main).place(relx=0.5,rely=0.5)
+    window_function.mainloop()
+
+#添加商品界面跳转
+def change_add():
+    #销毁画布
+    window.destroy()
+    #生成新界面
+    Staff_add()
+
+#删除商品界面跳转
+def change_delete():
+    window.destroy()
+    Staff_delete()
+
+#更新商品界面跳转
+def change_update():
+    window.destroy()
+    Staff_update()
+
+#条件查询商品界面跳转
+def change_select():
+    window.destroy()
+    Staff_select()
+
+#主界面跳转
+def chaneg_main():
+    window_function.destroy()
+    mainpage()
+
+#主界面
+def mainpage():
+    global window
+    window = tk.Tk()
+    window.title("超市零售信息管理系统")
+    window.geometry('500x400')
+    #生成画布，销毁后生成新的画布实现跳转
+    page = tk.Frame(window)
+    page.pack()
+    tk.Label(window, text="欢迎使用超市零售信息管理系统", font=("黑体", 20)).pack(pady=10)
+    button1 = tk.Button(window, text="添加商品信息", command=change_add).pack(pady=10)
+    button2 = tk.Button(window, text="删除商品信息", command=change_delete).pack(pady=10)
+    button3 = tk.Button(window, text="修改商品信息", command=change_update).pack(pady=10)
+    button4 = tk.Button(window, text="查找商品供货商名称", command=change_select).pack(pady=10)
+    window.mainloop()
+
+#主函数生成主界面
+if __name__ == '__main__':
+    mainpage()
+```
