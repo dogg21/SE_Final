@@ -142,7 +142,7 @@
 
 ## 四.代碼實現
 ### 1.實現Python 連接 SQL Severe 資料庫
-'''
+```
 import pymssql  #引入pymssql模块
 
 def conn():
@@ -153,5 +153,5 @@ def conn():
 
 if __name__ == '__main__':
     conn = conn()
-'''
+```
 
