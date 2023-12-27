@@ -45,3 +45,8 @@
 ### 三.全域E-R圖
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/all.png)
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
