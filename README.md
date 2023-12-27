@@ -1,4 +1,5 @@
 # 超市零售信息管理系统
+## 目錄
 * [一.需求分析](https://github.com/dogg21/SE_Final#1%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90)
     * [1.設計概念](https://github.com/dogg21/SE_Final#%E4%B8%80%E8%A8%AD%E8%A8%88%E6%A6%82%E5%BF%B5)
     * [2.功能說明](https://github.com/dogg21/SE_Final#%E4%BA%8C%E5%8A%9F%E8%83%BD%E8%AA%AA%E6%98%8E)
