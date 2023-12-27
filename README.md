@@ -82,3 +82,60 @@
 | Mtotal | 累計金額 | money | Mtotal >= 0 |
 | Mbalance | 卡內餘額 | money | Mbalance >= 0 |
 | Mcip | 會員密碼 | varchar |  |
+
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --- | --- | --- | --- |
+| Vnum | 供貨商編號 | varchar | 主鍵 |
+| Vname | 供貨商名稱 | varchar | |
+| Vphone | 供貨商電話 | varchar | |
+| Vplace | 供貨商地址 | varchar | |
+
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --- | --- | --- | --- |
+| Wnum | 倉庫編號 | varchar | 主鍵 |
+| Wname | 倉庫名稱 | varchar | |
+| Wplace | 倉庫地址 | varchar | |
+
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --- | --- | --- | --- |
+| Tnum | 交易單號 | varchar | 是表trade的外鍵 |
+| Gnum | 商品編號 | varchar | 是表goods的外鍵 |
+| Iamount | 退貨數量 | int | Iamount >= 0 |
+| Imoney | 退款金額 | money | Imoney >= 0 |
+| Idate | 退款日期 | datetime |  |
+
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --- | --- | --- | --- |
+| Tnum | 交易單號 | varchar | 主鍵 |
+| Tdate | 交易日期 | datetime | |
+| Snum | 員工編號 | varchar | 是表Staff的外鍵 |
+| Gnum | 商品編號 | varchar | Tmoney |
+| Tamount | 交易數量 | int | Tamount >= 0 |
+| Tmoney | 交易金額 | money | Tmoney >= 0 |
+| Mnum | 會員卡號 | varchar | 是表Menber的外鍵 |
+
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --- | --- | --- | --- |
+| Enum | 進貨單編號 | varchar | 主鍵 |
+| Gnum | 商品編號 | varchar | 是表Goods的外鍵 |
+| Eamount | 進貨量 | int | Eamount >= 0 |
+| Emoney | 總金額 | money | Emoney >= 0 |
+| Vnum | 供貨商編號 | varchar | 是表Vendor的外鍵 |
+| Edate | 進貨日期 | datetime |  |
+| Snum | 進貨員編號 | varchar | 是表Staff的外鍵 |
+
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --- | --- | --- | --- |
+| Xnum | 出貨單編號 | varchar | 主鍵 |
+| Gnum | 商品編號 | varchar | 是表Goods的外鍵 |
+| Xamount | 出貨量 | int | Xamount >= 0 |
+| Xmoney | 總金額 | money | Xmoney >= 0 |
+| Xdate | 出貨日期 | datetime |  |
+| Snum | 出貨員編號 | varchar | 是表Staff的外鍵 |
+
