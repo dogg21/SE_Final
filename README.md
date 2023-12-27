@@ -614,10 +614,10 @@ if __name__ == '__main__':
 ## 五.總結
 在開始設計前，要事先做足需求分析，瞭解自己的資料庫具體要實現什麼樣的功能，因為每一個數據中需要建立許多表，很容易混亂各個表之間的邏輯關係，因此可以把概念結構設計放在邏輯結構設計之前進行
 ## 參考文獻
-https://abg.baidu.com/view/c0c12e10a216147916112804?fr=seoSearch-income-top3page
+[软件工程 超市销售管理系统](https://abg.baidu.com/view/c0c12e10a216147916112804?fr=seoSearch-income-top3page)
 
-https://xiaojie.blog.csdn.net/article/details/131471335?spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-
+[超市综合管理信息系统](https://xiaojie.blog.csdn.net/article/details/131471335?spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-)
 
-https://blog.csdn.net/weixin_45525142/article/details/119729731?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170357706416800222863070%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=170357706416800222863070&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-4-119729731-null-null.nonecase&utm_term=%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0&spm=1018.2226.3001.4450
+[数据库课程设计—超市零售信息管理系统（Python实现）](https://blog.csdn.net/weixin_45525142/article/details/119729731?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170357706416800222863070%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=170357706416800222863070&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-4-119729731-null-null.nonecase&utm_term=%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0&spm=1018.2226.3001.4450)
 
-https://blog.csdn.net/yh1009/article/details/130857542?ops_request_misc=&request_id=&biz_id=102&utm_term=%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-130857542.nonecase&spm=1018.2226.3001.4187
+[数据库课程设计超市信息管理系统](https://blog.csdn.net/yh1009/article/details/130857542?ops_request_misc=&request_id=&biz_id=102&utm_term=%E8%B6%85%E5%B8%82%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-130857542.nonecase&spm=1018.2226.3001.4187)
