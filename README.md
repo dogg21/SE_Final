@@ -6,21 +6,30 @@
     * [4.業務流程圖](https://github.com/dogg21/SE_Final#%E5%9B%9B%E6%A5%AD%E5%8B%99%E6%B5%81%E7%A8%8B%E5%9C%96)
 * [二.概念結構設計](https://github.com/dogg21/SE_Final#2%E6%A6%82%E5%BF%B5%E7%B5%90%E6%A7%8B%E8%A8%AD%E8%A8%88)
    * [1.實體描述](https://github.com/dogg21/SE_Final#%E4%B8%80%E5%AF%A6%E9%AB%94%E6%8F%8F%E8%BF%B0)
-## 1.需求分析
-### 一.設計概念
+   * [2.局部E-R圖](https://github.com/dogg21/SE_Final#%E4%BA%8C%E5%B1%80%E9%83%A8e-r%E5%9C%96)
+   * [3.全域E-R圖](https://github.com/dogg21/SE_Final#%E4%B8%89%E5%85%A8%E5%9F%9Fe-r%E5%9C%96)
+* [三.邏輯結構設計](https://github.com/dogg21/SE_Final#3%E9%82%8F%E8%BC%AF%E7%B5%90%E6%A7%8B%E8%A8%AD%E8%A8%88)
+* [四.代碼實現](https://github.com/dogg21/SE_Final#%E5%9B%9B%E4%BB%A3%E7%A2%BC%E5%AF%A6%E7%8F%BE)
+   * [1.實現Python 連接 SQL Severe 資料庫](https://github.com/dogg21/SE_Final#1%E5%AF%A6%E7%8F%BEpython-%E9%80%A3%E6%8E%A5-sql-severe-%E8%B3%87%E6%96%99%E5%BA%AB)
+   * [2.創建資料庫表](https://github.com/dogg21/SE_Final#2%E5%89%B5%E5%BB%BA%E8%B3%87%E6%96%99%E5%BA%AB%E8%A1%A8)
+   * [3.插入數據](https://github.com/dogg21/SE_Final#3%E6%8F%92%E5%85%A5%E6%95%B8%E6%93%9A)
+   * [4.創建介面按鈕，並實現資料庫的“增刪改查”](https://github.com/dogg21/SE_Final#4%E5%89%B5%E5%BB%BA%E4%BB%8B%E9%9D%A2%E6%8C%89%E9%88%95%E4%B8%A6%E5%AF%A6%E7%8F%BE%E8%B3%87%E6%96%99%E5%BA%AB%E7%9A%84%E5%A2%9E%E5%88%AA%E6%94%B9%E6%9F%A5)
+* [五.總結](https://github.com/dogg21/SE_Final#%E4%BA%94%E7%B8%BD%E7%B5%90)
+## 一.需求分析
+### 1.設計概念
 這個超市零售管理資訊系統旨在為超市的會員管理工作提供一個比較系統的零售管理平台，它幫助超市存儲及管理進貨、銷售、庫存以及人員信息，是一套管理工具、極大提高超市管理的 效率。 很大程度上幫助了超市管理者對超市的掌握與管理。
-### 二.功能說明
+### 2.功能說明
 1. 進貨管理:依銷售狀況及庫存情況，自動制定進貨計畫（亦可手動制定修改），可避免盲目進貨造成商品積壓。 依計劃單有選擇性地進行自動入庫登記。 綜合查詢列印計畫進貨與入庫
 記錄及金額。
 2. 銷售管理:商品正常銷售、促銷與限量、限期及禁止銷售管制。 綜合查詢各種銷售明細記錄、各地收銀員收銀記錄以及交結帳情況等。 以多種方式統計產生銷售排行榜，靈活察看並列印商品銷售日、月、年報表。
 4. 庫存管理:綜合查詢庫存明細記錄。 庫存狀態自動警告提示。 如庫存過剩、少貨、缺貨等。 軟體為您預警，避免庫存商品積壓損失和缺貨。
 5. 人員管理:員工、會員、供貨商、廠商等基本資料登記管理。 員工操作權限管理。 客戶銷售權限管理。
-### 三.功能模組圖
+### 3.功能模組圖
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/functions.png)
-### 四.業務流程圖
+### 4.業務流程圖
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/flow.png)
-## 2.概念結構設計
-### 一.實體描述
+## 二.概念結構設計
+### 1.實體描述
 該超市資訊管理系統的抽象實體有六個:
 1. 員工實體屬性：員工編號，姓名，性別，年齡，職務，入職日期
 2. 庫存實體屬性：庫存編號，商品編號，商品名稱，商品價格，庫存商品數量，倉庫編號，商品入庫時間，商品出庫時間，商品出庫數量
@@ -28,7 +37,7 @@
 4. 商品實體屬性：商品編號，名稱，價格，商品類型
 5. 商品類型實體屬性：商品類型編號，類型名稱，商品注意事項
 6. 供應商實體屬性：供應商編號，姓名，電話，位址
-### 二.局部E-R圖
+### 2.局部E-R圖
 員工:
 
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/staff.png)
@@ -49,10 +58,10 @@
 
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/store.png)
 
-### 三.全域E-R圖
+### 3.全域E-R圖
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/all.png)
 
-## 3.邏輯結構設計
+## 三.邏輯結構設計
 
 員工表(Staff):
 | 屬性名  | 含意 | 類型 | 說明 |
