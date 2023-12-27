@@ -71,3 +71,14 @@
 | Galarm | 警告量 | int | Galarm >= 0 |
 | Gplan | 計畫庫存量 | int | Gplan >= 0 |
 | Vnum | 進貨商編號 | varchar | 是表vendor外鍵 |
+
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --- | --- | --- | --- |
+| Mnum | 會員卡號 | varchar | 主鍵 |
+| Mname | 會員姓名 | varchar | |
+| Mphone | 會員電話 | varchar | |
+| Mdate | 註冊日期 | datatime | |
+| Mtotal | 累計金額 | money | Mtotal >= 0 |
+| Mbalance | 卡內餘額 | money | Mbalance >= 0 |
+| Mcip | 會員密碼 | varchar |  |
