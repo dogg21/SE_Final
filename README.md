@@ -45,8 +45,10 @@
 ### 三.全域E-R圖
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/all.png)
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+## 3.邏輯結構設計
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --------|----- | -------|------ |
+| Snum  | 員工編號  | varchar | 主鍵|
+
 
