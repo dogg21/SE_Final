@@ -58,3 +58,15 @@
 | Sid  | 員工身分字號 | varchar |  |
 | Spart  | 員工所屬部門 | varchar |  |
 | Ssalary  | 員工工資 | money | Ssalary >= 0 |
+
+| 屬性名  | 含意 | 類型 | 說明 |
+| --- | --- | --- | --- |
+| Gnum | 商品編號 | varchar | 主鍵 |
+| Gname | 商品名稱 | varchar | |
+| Gtype | 商品類別 | varchar | |
+| Gprice | 商品售價 | money | Gprice >= 0 |
+| Gbid | 商品進價 | money | Gbid >= 0 |
+| Gstock | 庫存量 | int | Gstock >= 0 |
+| Galarm | 警告量 | int | Galarm >= 0 |
+| Gplan | 計畫庫存量 | int | Gplan >= 0 |
+| Vnum | 進貨商編號 | varchar | 是表vendor外鍵 |
