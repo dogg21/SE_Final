@@ -49,6 +49,12 @@
 
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
-| Snum  | 員工編號  | varchar | 主鍵 |
-| Sname  | 員工姓名  | varchar | |
-| Ssex  | 員工性別  | varchar | '男' or '女' |
+| Snum  | 員工編號 | varchar | 主鍵 |
+| Sname  | 員工姓名 | varchar | |
+| Ssex  | 員工性別 | varchar | '男' or '女' |
+| Sage  | 員工年齡 | int | Sage >= 18 |
+| Sstand  | 員工工齡 | int |  |
+| Sphone  | 員工電話 | varchar |  |
+| Sid  | 員工身分字號 | varchar |  |
+| Spart  | 員工所屬部門 | varchar |  |
+| Ssalary  | 員工工資 | money | Ssalary >= 0 |
