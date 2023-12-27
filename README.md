@@ -47,6 +47,7 @@
 
 ## 3.邏輯結構設計
 
+員工表(Staff):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Snum  | 員工編號 | varchar | 主鍵 |
@@ -59,7 +60,7 @@
 | Spart  | 員工所屬部門 | varchar |  |
 | Ssalary  | 員工工資 | money | Ssalary >= 0 |
 
-
+商品表(Goods):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Gnum | 商品編號 | varchar | 主鍵 |
@@ -70,9 +71,9 @@
 | Gstock | 庫存量 | int | Gstock >= 0 |
 | Galarm | 警告量 | int | Galarm >= 0 |
 | Gplan | 計畫庫存量 | int | Gplan >= 0 |
-| Vnum | 進貨商編號 | varchar | 是表vendor外鍵 |
+| Vnum | 進貨商編號 | varchar | 是表Vendor外鍵 |
 
-
+會員表(Menber):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Mnum | 會員卡號 | varchar | 主鍵 |
@@ -83,7 +84,7 @@
 | Mbalance | 卡內餘額 | money | Mbalance >= 0 |
 | Mcip | 會員密碼 | varchar |  |
 
-
+供貨商(Vendor):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Vnum | 供貨商編號 | varchar | 主鍵 |
@@ -91,23 +92,23 @@
 | Vphone | 供貨商電話 | varchar | |
 | Vplace | 供貨商地址 | varchar | |
 
-
+倉庫(Ware):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Wnum | 倉庫編號 | varchar | 主鍵 |
 | Wname | 倉庫名稱 | varchar | |
 | Wplace | 倉庫地址 | varchar | |
 
-
+退貨訊息(Infor):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
-| Tnum | 交易單號 | varchar | 是表trade的外鍵 |
-| Gnum | 商品編號 | varchar | 是表goods的外鍵 |
+| Tnum | 交易單號 | varchar | 是表Trade的外鍵 |
+| Gnum | 商品編號 | varchar | 是表Goods的外鍵 |
 | Iamount | 退貨數量 | int | Iamount >= 0 |
 | Imoney | 退款金額 | money | Imoney >= 0 |
 | Idate | 退款日期 | datetime |  |
 
-
+商品交易表(Trade):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Tnum | 交易單號 | varchar | 主鍵 |
@@ -118,7 +119,7 @@
 | Tmoney | 交易金額 | money | Tmoney >= 0 |
 | Mnum | 會員卡號 | varchar | 是表Menber的外鍵 |
 
-
+進貨訊息表(Entry):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Enum | 進貨單編號 | varchar | 主鍵 |
@@ -129,7 +130,7 @@
 | Edate | 進貨日期 | datetime |  |
 | Snum | 進貨員編號 | varchar | 是表Staff的外鍵 |
 
-
+出貨訊息表(Exits):
 | 屬性名  | 含意 | 類型 | 說明 |
 | --- | --- | --- | --- |
 | Xnum | 出貨單編號 | varchar | 主鍵 |
