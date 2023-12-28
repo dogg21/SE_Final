@@ -1,9 +1,93 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T12:59:52.831Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" version="22.1.15" etag="EA16edzhqYK_So3yY7Ft" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T13:00:23.146Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="dBDvMnqEndYcyidN9mUE" version="22.1.15" type="github">
   <diagram name="第 1 页" id="2KPR2waZYj5MwjoJPlhJ">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-1" value="員工" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="270" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-2" value="員工編號" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="220" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-3" value="員工姓名" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="180" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-4" value="員工性別" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="180" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-5" value="員工年齡" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="220" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-6" value="員工工齡" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="509" y="280" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-7" value="電話" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="340" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-8" value="身分字號" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="360" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-9" value="所屬部門" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="330" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-10" value="工資" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="270" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-11" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="220" as="sourcePoint" />
+            <mxPoint x="500" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="220" as="sourcePoint" />
+            <mxPoint x="500" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-13" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="220" as="sourcePoint" />
+            <mxPoint x="470" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-14" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="220" as="sourcePoint" />
+            <mxPoint x="500" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-15" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="220" as="sourcePoint" />
+            <mxPoint x="500" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-16" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="220" as="sourcePoint" />
+            <mxPoint x="500" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="310" as="sourcePoint" />
+            <mxPoint x="440" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-18" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="310" as="sourcePoint" />
+            <mxPoint x="375" y="344" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KaZ5Hf-sdvHzui96Yfx0-19" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KaZ5Hf-sdvHzui96Yfx0-1" target="KaZ5Hf-sdvHzui96Yfx0-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="295" as="sourcePoint" />
+            <mxPoint x="340" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
