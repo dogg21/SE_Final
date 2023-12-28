@@ -1,9 +1,176 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T12:48:19.670Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" version="22.1.15" etag="Uz9bMWKAXAM8YfRAYH9s" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T12:49:09.732Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="GFScJhfyrTaUXGVywSSs" version="22.1.15" type="github">
   <diagram name="第 1 页" id="tZBINpCPdWagCUvdZI4_">
-    <mxGraphModel>
+    <mxGraphModel dx="851" dy="-285" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-1" value="超市總經理與供貨商淺談業務" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1370" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-2" value="是否新供貨商" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="1430" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-3" value="&amp;nbsp;《舊供應商新商品引進流程》" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="1435" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-5" target="Nhg1b_kXB3glMAfeDoeh-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-5" value="&amp;nbsp;《新供應商新商品引進流程》" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="1500" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-6" value="&amp;nbsp;《訂貨管理作業流程》" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1092.5" y="1560" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-7" value="&amp;nbsp;《收穫工作流程》" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1102.5" y="1620" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-8" value="超市進行行銷管理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1102.5" y="1680" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-9" value="採購部與店面共同分析是否有滯銷或品質問題" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1002.5" y="1740" width="315" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-10" value="採購部分析經營是否有問題" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="1810" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-11" value="訊息部:新商品試賣是否已到期" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="1880" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-12" value="&amp;nbsp;《新商品轉正流程》" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1097.5" y="1950" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-13" value="&amp;nbsp;《供應商分析淘汰流程》" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1085" y="2010" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-14" value="是否新供貨商" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="2070" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-15" value="結算流程" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="2140" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-16" value="採購部處理解決" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1405" y="1745" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-17" value="&amp;nbsp;《退貨管理流程》" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1405" y="1815" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-1" target="Nhg1b_kXB3glMAfeDoeh-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1310" y="1470" as="sourcePoint" />
+            <mxPoint x="1360" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-2" target="Nhg1b_kXB3glMAfeDoeh-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="1410" as="sourcePoint" />
+            <mxPoint x="1170" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-5" target="Nhg1b_kXB3glMAfeDoeh-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1269.43" y="1530" as="sourcePoint" />
+            <mxPoint x="1269.43" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-2" target="Nhg1b_kXB3glMAfeDoeh-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="1540" as="sourcePoint" />
+            <mxPoint x="1170" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-3" target="Nhg1b_kXB3glMAfeDoeh-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1250" y="1460" as="sourcePoint" />
+            <mxPoint x="1315" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-7" target="Nhg1b_kXB3glMAfeDoeh-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="1480" as="sourcePoint" />
+            <mxPoint x="1170" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-8" target="Nhg1b_kXB3glMAfeDoeh-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="1660" as="sourcePoint" />
+            <mxPoint x="1170" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-9" target="Nhg1b_kXB3glMAfeDoeh-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="1720" as="sourcePoint" />
+            <mxPoint x="1170" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-9" target="Nhg1b_kXB3glMAfeDoeh-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1180" y="1730" as="sourcePoint" />
+            <mxPoint x="1180" y="1760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-10" target="Nhg1b_kXB3glMAfeDoeh-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="1740" as="sourcePoint" />
+            <mxPoint x="1190" y="1770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-16" target="Nhg1b_kXB3glMAfeDoeh-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1200" y="1750" as="sourcePoint" />
+            <mxPoint x="1200" y="1780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-10" target="Nhg1b_kXB3glMAfeDoeh-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1210" y="1760" as="sourcePoint" />
+            <mxPoint x="1210" y="1790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-11" target="Nhg1b_kXB3glMAfeDoeh-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="1860" as="sourcePoint" />
+            <mxPoint x="1170" y="1890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-12" target="Nhg1b_kXB3glMAfeDoeh-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1180" y="1870" as="sourcePoint" />
+            <mxPoint x="1180" y="1900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-13" target="Nhg1b_kXB3glMAfeDoeh-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="1880" as="sourcePoint" />
+            <mxPoint x="1190" y="1910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-14" target="Nhg1b_kXB3glMAfeDoeh-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="2050" as="sourcePoint" />
+            <mxPoint x="1170" y="2080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-14" target="Nhg1b_kXB3glMAfeDoeh-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1180" y="2060" as="sourcePoint" />
+            <mxPoint x="1180" y="2090" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1000" y="2090" />
+              <mxPoint x="1000" y="1965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nhg1b_kXB3glMAfeDoeh-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Nhg1b_kXB3glMAfeDoeh-11" target="Nhg1b_kXB3glMAfeDoeh-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1170" y="1860" as="sourcePoint" />
+            <mxPoint x="1170" y="1890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="950" y="1900" />
+              <mxPoint x="950" y="1695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
