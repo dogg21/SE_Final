@@ -17,7 +17,7 @@
    * [2.創建資料庫表](https://github.com/dogg21/SE_Final#2%E5%89%B5%E5%BB%BA%E8%B3%87%E6%96%99%E5%BA%AB%E8%A1%A8)
    * [3.插入數據](https://github.com/dogg21/SE_Final#3%E6%8F%92%E5%85%A5%E6%95%B8%E6%93%9A)
    * [4.創建介面按鈕，並實現資料庫的“增刪改查”](https://github.com/dogg21/SE_Final#4%E5%89%B5%E5%BB%BA%E4%BB%8B%E9%9D%A2%E6%8C%89%E9%88%95%E4%B8%A6%E5%AF%A6%E7%8F%BE%E8%B3%87%E6%96%99%E5%BA%AB%E7%9A%84%E5%A2%9E%E5%88%AA%E6%94%B9%E6%9F%A5)
-* [五.總結](https://github.com/dogg21/SE_Final#%E4%BA%94%E7%B8%BD%E7%B5%90)
+* [六.總結](https://github.com/dogg21/SE_Final#%E4%BA%94%E7%B8%BD%E7%B5%90)
 ## 一.需求分析
 ### 1.設計概念
 這個超市零售管理資訊系統旨在為超市的會員管理工作提供一個比較系統的零售管理平台，它幫助超市存儲及管理進貨、銷售、庫存以及人員信息，是一套管理工具、極大提高超市管理的 效率。 很大程度上幫助了超市管理者對超市的掌握與管理。
@@ -678,7 +678,7 @@ def mainpage():
 if __name__ == '__main__':
     mainpage()
 ```
-## 五.總結
+## 六.總結
 在開始設計前，要事先做足需求分析，瞭解自己的資料庫具體要實現什麼樣的功能，因為每一個數據中需要建立許多表，很容易混亂各個表之間的邏輯關係，因此可以把概念結構設計放在邏輯結構設計之前進行
 ## 參考文獻
 [软件工程 超市销售管理系统](https://abg.baidu.com/view/c0c12e10a216147916112804?fr=seoSearch-income-top3page)
