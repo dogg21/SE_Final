@@ -1,9 +1,81 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T13:08:11.583Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" version="22.1.15" etag="zP1b8ra_DfwsvxJGV3ii" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T13:08:26.363Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="hfZ36sOyLGWTnKYMIiWH" version="22.1.15" type="github">
   <diagram name="第 1 页" id="YdMw0qPAJO10bd_a6bOv">
-    <mxGraphModel>
+    <mxGraphModel dx="-228" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-1" value="系統管理員" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="130" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-2" value="輸入商品訊息介面" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1889.3799999999999" y="130" width="104.37" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-3" value="盤點" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2087.8100000000004" y="130" width="44.37" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-4" value="商品+銷售清單" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2212.8100000000004" y="130" width="104.37" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-5" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="HH-lSywt3Ca6aXhcrBap-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1779.9999999999998" y="470" as="sourcePoint" />
+            <mxPoint x="2039.9999999999998" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="HH-lSywt3Ca6aXhcrBap-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1941.9999999999998" y="470" as="sourcePoint" />
+            <mxPoint x="1789.9999999999998" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-7" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2109.31" y="470" as="sourcePoint" />
+            <mxPoint x="2109.31" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-8" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2270" y="470" as="sourcePoint" />
+            <mxPoint x="2270" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1779.9999999999998" y="230" as="sourcePoint" />
+            <mxPoint x="1939.9999999999998" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-10" value="輸入商品基本訊息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1809.9999999999998" y="210" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1941.2499999999998" y="290" as="sourcePoint" />
+            <mxPoint x="2110" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-12" value="確認商品訊息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1968.7499999999998" y="270" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2110" y="350" as="sourcePoint" />
+            <mxPoint x="2270" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-14" value="查詢商品行銷訊息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2136.88" y="330" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-15" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2270" y="400" as="sourcePoint" />
+            <mxPoint x="1779.9999999999998" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HH-lSywt3Ca6aXhcrBap-16" value="盤點操作結果" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1968.7499999999998" y="380" width="110" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
