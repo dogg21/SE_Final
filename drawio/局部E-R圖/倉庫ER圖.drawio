@@ -1,9 +1,39 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T13:03:28.305Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" version="22.1.15" etag="NnOXPmpGiKR5ZPWL8jEr" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T13:03:37.107Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="FmRN0i8fmY139hBGhgFZ" version="22.1.15" type="github">
   <diagram name="第 1 页" id="ZYMZGwFzdUVB_wf-mA0G">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="-418" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WOSPPWeF0A2hk6bP83-1-1" value="倉庫" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WOSPPWeF0A2hk6bP83-1-2" value="倉庫地址" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1270" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WOSPPWeF0A2hk6bP83-1-3" value="倉庫編號" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="1418" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WOSPPWeF0A2hk6bP83-1-4" value="倉庫名稱" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1270" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WOSPPWeF0A2hk6bP83-1-5" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WOSPPWeF0A2hk6bP83-1-1" target="WOSPPWeF0A2hk6bP83-1-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="1380" as="sourcePoint" />
+            <mxPoint x="310" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WOSPPWeF0A2hk6bP83-1-6" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WOSPPWeF0A2hk6bP83-1-1" target="WOSPPWeF0A2hk6bP83-1-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="1380" as="sourcePoint" />
+            <mxPoint x="245" y="1414" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WOSPPWeF0A2hk6bP83-1-7" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="WOSPPWeF0A2hk6bP83-1-1" target="WOSPPWeF0A2hk6bP83-1-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="1365" as="sourcePoint" />
+            <mxPoint x="210" y="1365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
