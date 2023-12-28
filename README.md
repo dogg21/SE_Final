@@ -188,7 +188,14 @@
 銷售訊息查詢:根據商品行銷情況，按需要對銷售情況進行查詢。在查詢模組中，可以按照商品的編號、銷售日期等多種方式進行商品銷售訊息查詢。  
 銷售訊息盤:可以按照要對一定時期內的銷售情況進行盤點。  
 輸入項、輸出項:本模組的數據輸入項主要是商品的銷售單號和商品編號，其中還包括銷售數量和銷售日期。  
-該銷售模組的用例圖:
+1.該銷售模組的用例圖:
+![image](https://github.com/dogg21/SE_Final/blob/main/image/8.png)  
+2.該銷售管理模組的活動圖:  
+![image](https://github.com/dogg21/SE_Final/blob/main/image/9.png)  
+3.銷售訊息查詢時序圖:  
+![image](https://github.com/dogg21/SE_Final/blob/main/image/10.png)  
+4.銷售盤點時序圖:  
+![image](https://github.com/dogg21/SE_Final/blob/main/image/11.png)
 
 ## 四.代碼實現
 ### 1.實現Python 連接 SQL Severe 資料庫
