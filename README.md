@@ -12,7 +12,7 @@
    * [3.全域E-R圖](https://github.com/dogg21/SE_Final#%E4%B8%89%E5%85%A8%E5%9F%9Fe-r%E5%9C%96)
 * [三.邏輯結構設計](https://github.com/dogg21/SE_Final#3%E9%82%8F%E8%BC%AF%E7%B5%90%E6%A7%8B%E8%A8%AD%E8%A8%88)
 * [四.模組功能設計](https://github.com/dogg21/SE_Final?tab=readme-ov-file#%E5%9B%9B%E6%A8%A1%E7%B5%84%E5%8A%9F%E8%83%BD%E8%A8%AD%E8%A8%88)
-* [五.代碼實現](https://github.com/dogg21/SE_Final#%E5%9B%9B%E4%BB%A3%E7%A2%BC%E5%AF%A6%E7%8F%BE)
+* [五.代碼實現](https://github.com/dogg21/SE_Final#%E4%BA%94%E4%BB%A3%E7%A2%BC%E5%AF%A6%E7%8F%BE)
    * [1.實現Python 連接 SQL Severe 資料庫](https://github.com/dogg21/SE_Final#1%E5%AF%A6%E7%8F%BEpython-%E9%80%A3%E6%8E%A5-sql-severe-%E8%B3%87%E6%96%99%E5%BA%AB)
    * [2.創建資料庫表](https://github.com/dogg21/SE_Final#2%E5%89%B5%E5%BB%BA%E8%B3%87%E6%96%99%E5%BA%AB%E8%A1%A8)
    * [3.插入數據](https://github.com/dogg21/SE_Final#3%E6%8F%92%E5%85%A5%E6%95%B8%E6%93%9A)
