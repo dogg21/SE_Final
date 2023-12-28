@@ -31,23 +31,23 @@
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/2.png)
 ### 5.系統數據流分析
 超市管理系統頂層圖:
+
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/1.png)
-
 超市管理系統第0層圖:
+
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/3.png)
-
 庫存管理部門第1層圖:
+
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/4.png)
-
 行銷管理部門第1層圖:
+
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/5.png)
-
 進貨管理部門第1層圖:
+
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/6.png)
-
 人事管理部門第1層圖:
-![image](https://github.com/dogg21/SE_Final/blob/main/image/7.png)
 
+![image](https://github.com/dogg21/SE_Final/blob/main/image/7.png)
 ## 二.概念結構設計
 ### 1.實體描述
 該超市資訊管理系統的抽象實體有六個:
