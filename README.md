@@ -2,7 +2,7 @@
 ## 目錄
 * [一.需求分析](https://github.com/dogg21/SE_Final#1%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90)
     * [1.設計概念](https://github.com/dogg21/SE_Final#%E4%B8%80%E8%A8%AD%E8%A8%88%E6%A6%82%E5%BF%B5)
-    * [2.功能說明](https://github.com/dogg21/SE_Final#%E4%BA%8C%E5%8A%9F%E8%83%BD%E8%AA%AA%E6%98%8E)
+    * [2.功能說明](https://github.com/dogg21/SE_Final#%E4%BA%8C%E6%A6%82%E5%BF%B5%E7%B5%90%E6%A7%8B%E8%A8%AD%E8%A8%88)
     * [3.功能模組圖](https://github.com/dogg21/SE_Final#%E4%B8%89%E5%8A%9F%E8%83%BD%E6%A8%A1%E7%B5%84%E5%9C%96)
     * [4.業務流程圖](https://github.com/dogg21/SE_Final/tree/main#4%E6%A5%AD%E5%8B%99%E6%B5%81%E7%A8%8B%E5%9C%96)
     * [5.系統數據流分析](https://github.com/dogg21/SE_Final/tree/main#5%E7%B3%BB%E7%B5%B1%E6%95%B8%E6%93%9A%E6%B5%81%E5%88%86%E6%9E%90)
