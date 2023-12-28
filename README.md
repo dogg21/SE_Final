@@ -4,7 +4,7 @@
     * [1.設計概念](https://github.com/dogg21/SE_Final#%E4%B8%80%E8%A8%AD%E8%A8%88%E6%A6%82%E5%BF%B5)
     * [2.功能說明](https://github.com/dogg21/SE_Final#%E4%BA%8C%E5%8A%9F%E8%83%BD%E8%AA%AA%E6%98%8E)
     * [3.功能模組圖](https://github.com/dogg21/SE_Final#%E4%B8%89%E5%8A%9F%E8%83%BD%E6%A8%A1%E7%B5%84%E5%9C%96)
-    * [4.業務流程圖](https://github.com/dogg21/SE_Final/blob/main/image/2.png)
+    * [4.業務流程圖](https://github.com/dogg21/SE_Final/tree/main#4%E6%A5%AD%E5%8B%99%E6%B5%81%E7%A8%8B%E5%9C%96)
 * [二.概念結構設計](https://github.com/dogg21/SE_Final#2%E6%A6%82%E5%BF%B5%E7%B5%90%E6%A7%8B%E8%A8%AD%E8%A8%88)
    * [1.實體描述](https://github.com/dogg21/SE_Final#%E4%B8%80%E5%AF%A6%E9%AB%94%E6%8F%8F%E8%BF%B0)
    * [2.局部E-R圖](https://github.com/dogg21/SE_Final#%E4%BA%8C%E5%B1%80%E9%83%A8e-r%E5%9C%96)
@@ -28,7 +28,20 @@
 ### 3.功能模組圖
 ![image](https://github.com/dogg21/SE_Final/blob/main/image/functions.png)
 ### 4.業務流程圖
-![image](https://github.com/dogg21/SE_Final/blob/main/image/flow.png)
+![image](https://github.com/dogg21/SE_Final/blob/main/image/2.png)
+### 5.系統數據流分析
+超市管理系統頂層圖:
+![image](https://github.com/dogg21/SE_Final/blob/main/image/1.png)
+超市管理系統第0層圖:
+![image](https://github.com/dogg21/SE_Final/blob/main/image/3.png)
+庫存管理部門第1層圖:
+![image](https://github.com/dogg21/SE_Final/blob/main/image/4.png)
+行銷管理部門第1層圖:
+![image](https://github.com/dogg21/SE_Final/blob/main/image/5.png)
+進貨管理部門第1層圖:
+![image](https://github.com/dogg21/SE_Final/blob/main/image/6.png)
+人事管理部門第1層圖:
+![image](https://github.com/dogg21/SE_Final/blob/main/image/7.png)
 ## 二.概念結構設計
 ### 1.實體描述
 該超市資訊管理系統的抽象實體有六個:
